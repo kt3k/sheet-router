@@ -8,7 +8,7 @@ module.exports = href
 // trailing '#' so empty links work as expected.
 // fn(str) -> null
 function href (cb) {
-  assert.equal(typeof cb, 'function', 'cb must be a function')
+  assert.equal(typeof cb, 'function', 'sheet-router/href: cb must be a function')
 
   window.onclick = function (e) {
     const node = (function traverse (node) {
