@@ -58,7 +58,7 @@ function sheetRouter (dft, tree) {
 
   // match a route on the router
   return function match (route, arg1, arg2, arg3, arg4, arg5) {
-    assert.equal(typeof route, 'string', 'route must be a string')
+    assert.equal(typeof route, 'string', 'sheet-router: route must be a string')
     if (route === lastRoute) {
       return lastCallback(arg1, arg2, arg3, arg4, arg5)
     } else {
